@@ -74,7 +74,7 @@
         <dependency>
             <groupId>io.rest-assured</groupId>
             <artifactId>rest-assured</artifactId>
-            <version>4.3.0</version>
+            <version>3.3.0</version>
             <scope>test</scope>
         </dependency>
         <!-- https://mvnrepository.com/artifact/net.serenity-bdd/serenity-core -->
@@ -123,7 +123,7 @@
         <dependency>
             <groupId>io.rest-assured</groupId>
             <artifactId>json-schema-validator</artifactId>
-            <version>4.3.1</version>
+            <version>3.3.0</version>
         </dependency>
 
     </dependencies>
