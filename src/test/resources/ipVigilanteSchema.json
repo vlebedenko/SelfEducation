@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "status": {
+      "type": "string"
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "ipv4": {
+          "type": "string"
+        },
+        "continent_name": {
+          "type": "string"
+        },
+        "country_name": {
+          "type": "string"
+        },
+        "subdivision_1_name": {
+          "type": "string"
+        },
+        "subdivision_2_name": {
+          "type": ["string","null"]
+        },
+        "city_name": {
+          "type": "string"
+        },
+        "latitude": {
+          "type": "string"
+        },
+        "longitude": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "ipv4",
+        "continent_name",
+        "country_name",
+        "subdivision_1_name",
+        "subdivision_2_name",
+        "city_name",
+        "latitude",
+        "longitude"
+      ]
+    }
+  },
+  "required": [
+    "status",
+    "data"
+  ]
+}
