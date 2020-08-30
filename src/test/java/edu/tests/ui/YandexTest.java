@@ -1,13 +1,13 @@
-package yandex.tests.ui;
+package edu.tests.ui;
 
+import edu.pages.YandexMain;
+import edu.preconditions.Preconditions;
 import io.qameta.allure.Description;
 import net.serenitybdd.junit.runners.SerenityRunner;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.runner.RunWith;
-import yandex.pages.YandexMain;
-import yandex.preconditions.Preconditions;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -45,7 +45,6 @@ public class YandexTest {
     @Description("Описание теста 1")
     @DisplayName("Тест 1. Поиск погоды в городах")
     public void searchCityWeatherTest() {
-        System.out.println(randomCity);
         yandexMain.searchField.val("Погода " + randomCity);
         yandexMain.searchButton.should(visible).click();
         assertThat(yandexMain.searchField.should(visible).getValue())

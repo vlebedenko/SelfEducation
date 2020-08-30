@@ -1,13 +1,12 @@
-package yandex.tests.api;
+package edu.tests.api;
 
+import edu.help.Routine;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import net.serenitybdd.junit.runners.SerenityRunner;
 import net.thucydides.core.annotations.Steps;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import yandex.help.Routine;
 
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 import static org.hamcrest.Matchers.is;
@@ -51,7 +50,7 @@ public class FreeAPIsTest {
     @Test
     public void serenityStepsTest() {
         routine.checkYourIp("178.215.144.157");
-        routine.searchIsExecutedSuccesfully();
+        routine.searchIsExecutedSuccessfully();
         routine.iShouldGetCountry("Russia");
     }
 
@@ -59,7 +58,7 @@ public class FreeAPIsTest {
     @Ignore
     public void negativeSerenityStepsTest() {
         routine.checkYourIp("192.264.134.131");
-        routine.searchIsExecutedSuccesfully();
+        routine.searchIsExecutedSuccessfully();
         routine.iShouldGetCountry("Russia");
     }*/
 

@@ -1,8 +1,8 @@
-package yandex.pages;
+package edu.pages;
 
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
-import yandex.blocks.CityRightSideBlock;
+import edu.blocks.CityRightSideBlock;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;

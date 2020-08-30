@@ -1,6 +1,6 @@
-package yandex.preconditions;
+package edu.preconditions;
 
-import yandex.pages.YandexMain;
+import edu.pages.YandexMain;
 
 import static com.codeborne.selenide.Selenide.open;
 
